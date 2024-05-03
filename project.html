@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Stack Developer</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Baloo+Chettan+2&family=Calligraffitti&display=swap');
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        nav{
+            background-color: salmon;
+            height: 50px;
+            font-size: 25px;
+           
+        }
+        #about{
+            margin-left: 60%;
+            
+        }
+        a{
+            text-decoration: none;
+            margin-left: 5%;
+            color: white;
+        }
+        #head{
+            color: white;
+            border: 2px solid black;
+            width: 100%;
+            height: 600px;
+            background-size: cover;
+            background-image: url("./pexels-punchbrandstock-4300393.jpg");
+        }
+        h1{
+            margin-top: 10%;
+            margin-left: 12%; 
+            font-size: 90px;  
+        }
+        #fullst{
+            margin-left: 10%;
+            font-size: 50px;
+        }
+        #name{
+            margin-left: 40%;
+            margin-top: 25%;
+            font-family: 'Bebas Neue', cursive;
+            transform: translate(-50%,-50%);
+            background-image: linear-gradient(gold, gold);
+            background-size: 100% 10px;
+            background-repeat: no-repeat;
+            background-position: 100% 0%;
+            transition: background-size .7s, background-position .5s ease-in-out;
+        }
+
+        #name:hover {
+            background-size: 100% 100%;
+            background-position: 0% 100%;
+            transition: background-position .7s, background-size .5s ease-in-out;
+        }
+        p{
+            margin-left: 10%;
+            margin-top: 2%;
+            font-size: larger;
+            margin-bottom: 10%;
+        }
+        #abouthead{
+            display: grid;
+            grid-template-columns: auto auto;
+            width: 100%;
+            margin-top: 10%;
+        }
+        #contain{
+            width: 100%;
+            height: 600px;
+            text-wrap: wrap;
+            background: #37373a;
+        }
+        #myimg{
+            width: 100%;
+            height: 600px;
+        }
+        #projecthead{
+            background-image: url("./pexels-tirachard-kumtanom-112571-733854.jpg");
+            background-size: cover;
+            width: 100%;
+            height: 700px;
+            display: flex;
+            opacity: .9;
+        }
+        #project{
+            width: 90%;
+            height: 200px;
+            margin-left: 20%;
+           
+        }
+        #software{
+            width: 10%;
+            height: 700px;
+        }
+        #html{
+            animation-name: html;
+            animation-duration: 2s;
+            width: 100%;
+        }
+        @keyframes html{
+            50%{
+                transform:translateX(-100px);
+            }
+        }
+        #css{
+            animation-name: css;
+            animation-duration: 2s;
+            animation-delay: 2s;
+            width: 100%;
+        }
+        @keyframes css{
+            50%{
+                transform:translateX(-100px);
+            }
+        }
+        #java{
+            animation-name: java;
+            animation-duration: 2s;
+            animation-delay: 4s;
+            width: 100%;
+        }
+        @keyframes java{
+            50%{
+                transform:translateX(-100px);
+            }
+        }
+        #js{
+            animation-name: js;
+            animation-duration: 2s;
+            animation-delay: 6s;
+            width: 100%;
+        }
+        @keyframes js{
+            50%{
+                transform:rotate(180deg);
+            }
+        }
+        #php{
+            animation-name: php;
+            animation-duration: 2s;
+            /* animation-iteration-count: infinite; */
+            animation-delay: 8s;
+            width: 100%;
+        }
+        @keyframes php{
+            50%{
+                transform:translateX(-100px);
+            }
+        }
+        #frontend{
+            width: 100%;
+            height: 1200px;
+            display: grid;
+            margin: 0%;
+            grid-template-columns: auto auto;
+            color: black;
+            /* background-color: #f6b26b; */
+            /* background-image: url("./pexels-tirachard-kumtanom-112571-733854.jpg"); */
+            background-size: cover;
+        }
+        #able{
+            background-image: url("./ablescrn.png");
+        }
+        #able:hover{
+            transform: scale(1.1);
+            perspective: 1000px;
+        }
+        #abs{
+            background-image: url("./Screenshot\ 2024-04-19\ abstract.png");
+        }
+        #abs:hover{
+            transform: scale(1.1);
+        }
+        #alt{
+            background-image: url("./Screenshot\ 2024-04-19\ altalya.png");
+        }
+        #alt:hover{
+            transform: scale(1.1);
+        }
+        #lobe{
+            background-image: url("./lobescrn.png"); 
+        }
+        #lobe:hover{
+            transform: scale(1.1);
+        }
+        #ex{
+            background-image: url("./exscrn.png");  
+        }
+        #ex:hover{
+            transform: scale(1.1);
+        }
+        #mono{
+            background-image: url("./monoscrn.png"); 
+        }
+        #mono:hover{
+            transform: scale(1.1);
+        }
+        .imgs{
+            border-radius: 50px;
+            border: 2px solid black;
+            color: gray;
+            background-size: cover;
+            margin-top: 5%;
+            margin-left: 10%;
+            width: 70%;
+        }
+        #contact{
+            margin-left: 50%;
+        }
+        .icons{
+            width: 60px;
+            margin-top: 10%;
+            margin-left: 2%;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a id="about" href="#name">About</a>
+        <a href="#project">Projects</a>
+        <a href="">Contact</a>
+    </nav>
+    <section id="head">
+        <h1>Let's get to know more about my coding journey!</h1>
+    </section>
+    <div id="abouthead">
+        <div id="contain">
+            <h1 id="name">Vishalini Pasupathi</h1>
+            <h2 id="fullst">Full Stack Developer</h2>
+            <p>As a full stack developer, I am a dynamic and versatile professional with a passion <br>
+                for crafting seamless digital experiences from end to end. 
+        </div>
+        <div id="myimg">
+            <img src="./IMG_7059.jpg" alt="" width="100%" height="600px">
+        </div>
+        
+    </div>
+    <div id="projecthead">
+        <div id="project">
+            <h1>Projects</h1>
+            <p>Designed and developed a sleek and professional portfolio website to showcase my <br> skills, experience, and projects. Utilized HTML, CSS, and JavaScript to create a <br> visually stunning and informative user experience.</p>
+        </div>
+        <div id="software">
+            <img id="html" src="./html-removebg-preview.png" alt="" >
+            <img id="css" src="./css.png" alt="">
+            <img id="java" src="./java.png" alt="">
+            <img id="js" src="./java-script.png" alt="">
+            <img id="php" src="./php.png" alt="">
+        </div>
+    </div>
+    <div id="frontend">
+        <a id="able" class="imgs" href="./Ableton.html"></a>
+        <a id="abs" class="imgs" href="./Abstract.html"></a>
+        <a id="alt" class="imgs" href="./Altalya.html"></a>
+        <a id="lobe" class="imgs" href="./lobeboot.html"></a>
+        <a id="ex" class="imgs" href="./Examples.html"></a>
+        <a id="mono" class="imgs" href="./Monogram.html"></a>
+    </div>
+    <div id="contact">
+        <a href=""><img class="icons" src="https://cdn3.iconfinder.com/data/icons/2018-social-media-logotypes/1000/2018_social_media_popular_app_logo_linkedin-128.png" alt=""></a>
+        <img class="icons" src="https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/13-whatsapp-128.png" alt="">
+        <img class="icons" src="https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/62-instagram-128.png" alt="">
+        <img class="icons" src="https://cdn1.iconfinder.com/data/icons/logotypes/32/github-128.png" alt="">
+        <img class="icons" src="https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/112-gmail_email_mail-128.png" alt="">
+    </div>
+</body> 
+</html>

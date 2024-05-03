@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        div{
+            width: 100%;
+            height: 100%;
+            border: 2px solid black;
+        }
+        #div1{
+            width: 90%;
+            height: 500px;
+            background-color: black;
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-gap: 10px;
+            margin-left: 5%;
+            margin-top: 2%;
+        }
+    
+        .a{
+            background-color: red;
+        }
+        .b{
+            background-color: blue;
+        }
+        .c{
+            background-color: yellow;
+        }
+        @media screen and (min-width:500px) and (max-width:750px) {
+            #div1{
+                grid-template-columns: auto auto;
+            }
+        }
+        @media screen and (min-width:300px) and (max-width:500px) {
+            #div1{
+                grid-template-columns: auto;
+            }
+            .c{
+                background-color: aqua;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="div1">
+        <div class="a aa"></div>
+        <div class="b aa"></div>
+        <div class="c aa"></div>
+        <div class="a aa"></div>
+        <div class="b aa"></div>
+        <div class="c aa"></div>
+        <div class="a aa"></div>
+        <div class="b aa"></div>
+        <div class="c aa"></div>
+    </div>
+  
+</body>
+</html>

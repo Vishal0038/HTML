@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lobe Examples | Machine Learning</title>
+    <link rel="icon" href="./icon.png">
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        header{
+            display:flex;
+            /* margin-top:10px; */
+            top: 0px;
+            position:fixed;
+            background-color: white;
+            width:100%;
+            height:auto;
+        }
+        #lobe{
+            font-size: 200%;
+            font-family:LabGrotesque,Helvetica Neue,Helvetica,Arial,sans-serif;
+            margin-left: 5%;
+            font-weight: bolder;
+            color:rgb(56, 53, 53);
+        }
+        .opt{
+            margin:3%;
+            font-size: 120%;
+            margin-left: 30px;
+            text-decoration: none;
+            color:rgb(70, 68, 68);
+            font-weight: 500;
+            font-family: LabGrotesque,Helvetica Neue,Helvetica,Arial,sans-serif;
+        }
+        #menu{
+            margin-left: 10%;
+            display: flex;
+        }
+        button{
+            border:2px solid white ;
+            width:10%;
+            height:50px;
+            background-color:#04ddb2;
+            border-radius: 50px;
+            color:white;
+            font-size: 120%;
+            font-weight: bolder;
+            margin-left: 20%;
+            font-family: LabGrotesque,Helvetica Neue,Helvetica,Arial,sans-serif;;
+        }
+        #para{
+            display: flex;
+            font-family: LabGrotesque,Helvetica Neue,Helvetica,Arial,sans-serif;
+            margin-left: 30%;
+            font-size: 200%;
+            margin-top: 5%;
+        }
+        #ex{
+            color:#04ddb2;
+        }
+        h1{
+            color:rgb(56, 53, 53);
+        }
+        #p1{
+            font-family: LabGrotesque,Helvetica Neue,Helvetica,Arial,sans-serif;
+            margin-left: 28%;
+            font-size: x-large;
+            margin-top: 10px;
+            color:rgb(56, 53, 53);
+           
+        }
+        #p2{
+            font-family: LabGrotesque,Helvetica Neue,Helvetica,Arial,sans-serif;
+            margin-left: 27%;
+            font-size: x-large;
+            margin-top: 10px;
+            color:rgb(56, 53, 53);
+        }
+        #video{
+            display: grid;
+            grid-template-columns:auto auto;
+            grid-gap: 0%;
+        }
+        video{
+            border-top-right-radius: 20%;
+            border-top-left-radius: 20%;
+            width: 80%;
+            height:400px;
+            margin-left: 10%;
+        }
+        pre{
+            margin-left: 10%;
+            font-family:LabGrotesque,Helvetica Neue,Helvetica,Arial,sans-serif ;
+            color:rgb(56, 53, 53);
+            font-size: 140%;
+            margin-top: 2%;
+        }
+        h2{
+            margin-left: 10%;
+            font-family: LabGrotesque,Helvetica Neue,Helvetica,Arial,sans-serif;
+            color:rgb(56, 53, 53);
+        }
+        #train{
+            font-family: LabGrotesque,Helvetica Neue,Helvetica,Arial,sans-serif;
+            margin-left: 32%;
+            font-size: 60px;
+            margin-top: 6%;
+            color:rgb(56, 53, 53);
+        }
+        #with{
+            font-family: LabGrotesque,Helvetica Neue,Helvetica,Arial,sans-serif;
+            margin-left: 38%;
+            font-size: 60px;
+            color:rgb(56, 53, 53);
+        }
+        #b1{
+            margin-left: 42%;
+            margin-top: 5%;
+            width:15%;
+            height:50px
+        }
+        footer{
+            display:flex;
+            color:rgb(56, 53, 53);
+            font-family: LabGrotesque,Helvetica Neue,Helvetica,Arial,sans-serif;
+            font-size: medium;
+            margin-bottom: 10%;
+            margin-top: 5%;
+        }
+        .foot{
+            margin-left: 10%;
+            margin-top: 3%;
+        }
+        li{
+            margin-top: 20%;
+        }
+        .l1{
+            margin-top:15% ;
+        }
+        @media screen and (min-width: 300px) and (max-width:750px) {
+            #video{
+                display: grid;
+                grid-template-columns: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="lobe">
+            <img src="./Screenshot from 2024-02-13 12-53-35.png" alt="">
+        </div>
+        <div id="menu">
+            <a href="https://www.lobe.ai/" class="opt">
+                Overview
+            </a>
+            <a href="https://www.lobe.ai/examples" class="opt">
+                Examples
+            </a>
+            <a href="https://www.lobe.ai/tour" class="opt">
+                Tour
+            </a>
+            <a href="https://www.lobe.ai/blog" class="opt">
+                Blog
+            </a>
+            <a href="https://www.lobe.ai/docs/welcome/welcome" class="opt">
+                Help
+            </a>
+        </div>
+        <button>
+            Download
+        </button>
+    </header>
+    <div id="para">
+        <h1>
+            Lobe
+        </h1>
+        <h1 id="ex">
+            Examples
+        </h1>
+    </div>
+    <p id="p1">One tool, endless possibilities. Discover all the</p>
+    <p id="p2"> machine learning models you can train with Lobe.</p>
+    <div id="video">
+        <div>
+            <video src="https://www.lobe.ai/assets/examples/Plants.mp4" autoplay loop></video>
+            <h2>Plant Species</h2>
+            <pre>
+Train your app to distinguish between different 
+species of plants to help people identify
+poisonous vegetation.</pre>
+        </div>
+        <div>
+            <video src="https://www.lobe.ai/assets/examples/Hand%20Count.mp4" autoplay loop></video>
+            <h2>Hand Gestures</h2>
+            <pre>
+Train your app to understand the movement of
+your hand to create new kinds of immersive
+user experiences.</pre>
+        </div>
+        <div>
+            <video src="https://www.lobe.ai/assets/examples/Feel%20the%20Burn.mp4" autoplay loop></video>
+            <h2>Personal Trainer</h2>
+            <pre>
+Train your app to recognize different workout
+positions to create an automated personal 
+trainer that counts your reps.
+                </pre>
+        </div>
+        <div>
+            <video src="https://www.lobe.ai/assets/examples/Laughing.mp4" autoplay loop></video>
+            <h2>Emotional Reactions</h2>
+            <pre>
+Train your app to react to different expressions
+allowing people to send emoji reactions using 
+just their face.</pre>
+        </div>
+        <div>
+            <video src="https://www.lobe.ai/assets/examples/Painting%20with%20Mike.mp4" autoplay loop></video>
+            <h2>Interactive Painting</h2>
+            <pre>
+Train your app to respond with sounds and
+stories while kids draw to create engaging
+learning experiences.
+            </pre>
+        </div>
+        <div>
+            <video src="https://www.lobe.ai/assets/examples/Mask%20Up.mp4" autoplay loop></video>
+            <h2>Safety Precautions</h2>
+            <pre>
+Train your app to monitor when masks are
+being correctly worn to help encourage proper
+safety precautions.</pre>
+        </div>
+        <div>
+            <video src="https://www.lobe.ai/assets/examples/Whales.mp4" autoplay loop></video>
+            <h2>Whale Watching</h2>
+            <pre>
+Train your app to detect marine life in tourist
+photos to help conservationists map and
+protect the ocean.</pre>
+        </div>
+        <div>
+            <video src="https://www.lobe.ai/assets/examples/Bees.mp4" autoplay loop></video>
+            <h2>Beehive Health</h2>
+            <pre>
+Train your app to monitor the entrance of hives 
+to help beekeepers track and analyze the
+health of their colonies.</pre>
+        </div>
+        <div>
+            <video src="https://www.lobe.ai/assets/examples/Sleeping.mp4" autoplay loop></video>
+            <h2>Baby Monitor</h2>
+            <pre>
+Train your app to detect when babies are 
+sleeping or awake to notify parents before they
+start crying.</pre>
+        </div>
+        <div>
+            <video src="https://www.lobe.ai/assets/examples/Checkout.mp4" autoplay loop></video>
+            <h2>Smart Checkout</h2>
+            <pre>
+Train your app to recognize different types of
+produce to help checkout faster without the
+need to remember price look-up codes.</pre>
+        </div>
+        <div>
+            <video src="https://www.lobe.ai/assets/examples/Wildfire.mp4" autoplay loop></video>
+            <h2>Fire Watch</h2>
+            <pre>
+Train your app to detect smoke and flames
+using remote cameras to help spot new 
+wildfires before it's too late.</pre>
+        </div>
+        <div>
+            <video src="https://www.lobe.ai/assets/examples/Microscope.mp4" autoplay loop></video>
+            <h2>Scientific Research</h2>
+            <pre>
+Train your app to detect organisms under a
+microscope to help researchers analyze large
+quantities of scientific samples.</pre>
+        </div>
+        <div>
+            <video src="https://www.lobe.ai/assets/examples/African%20Wildlife.mp4" autoplay loop></video>
+            <h2>Wildlife Behavior</h2>
+            <pre>
+Train your app to detect wildlife behavior with 
+remote cameras to track population and
+migration patterns over a large area.</pre>
+        </div>
+        <div>
+            <video src="https://www.lobe.ai/assets/examples/Compression.mp4" autoplay loop></video>
+            <h2>Equipment Analytics</h2>
+            <pre>
+Train your app to monitor analog gauges and
+equipment to provide modern digital readouts
+and real time analytics.</pre>
+        </div>
+        <div>
+            <video src="https://www.lobe.ai/assets/examples/Telescope.mp4" autoplay loop></video>
+            <h2>Telescopic Imagery</h2>
+            <pre>
+Train your app to recognize different celestial
+bodies to help astronomers analyze large
+amounts of telescopic imagery.</pre>
+        </div>
+        <div>
+            <video src="https://www.lobe.ai/assets/examples/Deforestation.mp4" autoplay loop></video>
+            <h2>Aerial Imagery</h2>
+            <pre>
+Train your app to monitor aerial imagery to gain
+insights into macro level changes happening
+around the globe.</pre>
+        </div>
+    </div>
+    <h1 id="train">
+        Train your app 
+    </h1>
+    <h1 id="with">
+        with Lobe
+    </h1>
+    <button id="b1">
+        Download
+    </button>
+    <footer>
+        <div class="foot">
+            <ul type="none">
+            <img src="Screenshot from 2024-02-13 12-53-35.png" alt="" width="70%">
+            <li class="l1">A product by Microsoft.</li>
+            <li class="l1">All rights reserved.</li>
+            <li class="l1">© Microsoft 2021</li>
+            </ul>
+        </div>
+        <div class="foot"><ul type="none">
+            <h3>About</h3>
+            <li>Download</li>
+            <li>Overview</li>
+            <li>Examples</li>
+            <li>Blog</li>
+        </ul>
+        </div>
+        <div class="foot"><ul type="none">
+            <h3>General</h3>
+            <li>Notice</li>
+            <li>License</li>
+            <li>Press Inquiry</li>
+            <li>Press Images</li>
+        </ul>
+        </div>
+        <div class="foot"><ul type="none">
+            <h3>Resources</h3>
+            <li>Help</li>
+            <li>Tour</li>
+            <li>Contact</li>
+            <li>Privacy</li>
+        </ul>
+        </div>
+        <div>
+            <img src="./icons.png" alt="">
+        </div>
+    </footer>
+</body>
+</html>

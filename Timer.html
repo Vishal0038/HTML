@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer</title>
+    <style>
+        #clock{
+            border: 2px solid black;
+            width: 50%;
+            height: 300px;
+            font-size: 100px;
+            background-color: black;
+            margin-left: 25%;
+            text-align: center;
+            margin-top: 10%;
+            background-size: cover;
+            display: grid;
+            grid-template-columns: auto auto;
+            align-items: center;
+        }
+        #minute{
+            width: 70%;
+            height: 100px;
+            background-color: white;
+            margin-left: 15%;
+        }
+        #second{
+            width: 70%;
+            height: 100px;
+            background-color: white;
+            margin-left: 10%;
+        }
+        #image{
+            margin-left: 35%;
+            text-align: center;
+            margin-top: 10%;
+            display: none;
+        }
+        #minlet{
+            width: 70%;
+            height: 50px;
+            border: 2px solid wheat;
+            font-size: 40px;
+            color: darkred;
+            background-color: seagreen;
+            margin-left: 15%;
+        }
+        #seclet{
+            width: 70%;
+            height: 50px;
+            border: 2px solid wheat;
+            background-color: seagreen;
+            font-size: 40px;
+            color: darkred;
+            margin-left: 10%;
+        }
+    </style>
+</head>
+<body>
+    <div id="clock">
+        <div id="minute"></div>
+        <div id="second"></div>
+        <div id="minlet">minutes</div>
+        <div id="seclet">seconds</div>
+    </div>
+    <img id="image" src="https://th.bing.com/th/id/OIP.ostYoUNraMKKMq-AP4FjBwHaFj?w=199&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="">
+    <script src="./../Vishalini Javascript/Timer.js"></script>
+</body>
+</html>

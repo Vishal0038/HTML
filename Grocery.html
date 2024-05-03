@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Grocery</title>
+    <style>
+        #head{
+            text-align: center;
+        }
+        #form{
+            margin-left: 25%;
+            text-align: center;
+            width: 50%;
+            height: 200px;
+        }
+        label{
+            font-size: 25px;
+        }
+        #product{
+            margin-left: 7%;
+        }
+        #quantity{
+            margin-left: 6.5%;
+        }
+        #price{
+            margin-left: 9%;
+        }
+        input{
+            margin-top: 1%;
+        }
+        table,tr{
+            border: 2px solid black;
+            margin-left: 35%;
+            font-size: large;
+            width: 30%;
+            background-color: sandybrown;
+        }
+        button{
+            margin-top: 5%;
+            width: 10%;
+            margin-bottom: 3%;
+        }
+        #final{
+            margin-left: 70%;
+        }
+        #total{
+            width: 20%;
+            height: 50px;
+            border: 2px solid black;
+            font-size: 50px;
+            text-align: center;
+            margin-left: 70%;
+            background-color: burlywood;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="head">KOVAI PAZHAMUDIR NILAYAM</h1>
+    <h1 id="final">Grand Total</h1>
+        <div id="total"></div>
+    <form action="" id="form">
+        <label for="">Product</label>
+        <input id="product" type="text"><br>
+        <label for="">Quantity</label>
+        <input id="quantity" type="number"><br>
+        <label for="">Price</label>
+        <input id="price" type="number"><br>
+        <button type="submit">Submit</button>
+    </form>
+    <table id="table">
+        <tr>
+            <td>Product Name</td>
+            <td>Quantity</td>
+            <td>Price</td>
+            <td>Total</td>
+        </tr>
+    </table>
+        
+        <script src="./../Vishalini Javascript/Grocery.js"></script>
+</body>
+</html>

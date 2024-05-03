@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            display: grid;
+            grid-template-columns: auto auto;
+            width: 50%;
+            height: 50px;
+            /* border: 2px solid black; */
+            margin-top: 5%;
+        } 
+        button{
+            width: 60%;
+            height: 50px;
+            font-size: larger;
+            margin-left: 10%;
+        }
+        #square{
+            border: 2px solid black;
+            width: 50%;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div id="square">    
+    </div>
+    <div class="box">
+        <div><button onclick="hide()">Hide</button></div>
+        <div><button onclick="show()">Show</button></div>
+    </div>
+    <script src="./../Vishalini Javascript/Hide.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Image Generator</title>
+    <style>
+        #grid{
+            border: 3px solid hotpink;
+            display: grid;
+            grid-template-columns: auto auto auto;
+            width: 30%;
+            height:380px;
+            margin-left:35%;
+           
+        }
+        .box{
+            border: 1px groove seagreen;
+            background-size: cover;
+        }
+        #point{
+            border: 2px solid firebrick;
+            width: 10%;
+            height: 100px;
+            font-size: 80px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Points</h1>
+    <div id="point">0</div>
+    <div id="grid">
+        <div class="box" onclick="win(0)"></div>
+        <div class="box" onclick="win(1)"></div>
+        <div class="box" onclick="win(2)"></div>
+        <div class="box" onclick="win(3)"></div>
+        <div class="box" onclick="win(4)"></div>
+        <div class="box" onclick="win(5)"></div>
+        <div class="box" onclick="win(6)"></div>
+        <div class="box" onclick="win(7)"></div>
+        <div class="box" onclick="win(8)"></div>
+    </div>
+    
+    <script src="./../Vishalini Javascript/RandomImage.js"></script>
+</body>
+</html>

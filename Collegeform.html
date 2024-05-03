@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Application Form</title>
+</head>
+<body>
+    <form action="" method="get">
+        <h1>Application Form</h1>
+        <label>Name</label>
+        <input type="text" name="Name" placeholder="Enter your name" required autofocus><br><br>
+        <label>Date of Birth</label>
+        <input type="date"name="DoB" placeholder="Enter your DOB"required><br><br>
+        <label>Age</label>
+        <input type="number"placeholder="Your Age" required max="10"><br><br>
+        <label for="">Gender: </label>
+        <label for="">Male</label>
+        <input type="radio" name="gender">
+        <label for="">Female</label>
+        <input type="radio" name="gender"><br><br>
+        <label>Contact Number</label>
+        <input type="tel" placeholder="Phone number"required maxlength="11" pattern="[6-9]{1}[0-9]{4}-[0-9]{5}"><br><br>
+        <label for="">Address</label>
+        <input type="text" placeholder="Door no"><br>
+        <input type="text" placeholder="Street name"><br>
+        <input type="text" placeholder="Area name"><br>
+        <input type="text" placeholder="District"><br>
+        <input type="number" placeholder="Pincode"><br><br>
+        <label for="">State</label>
+        <input list="State">
+        <datalist id="State"><br>
+            <option value="TamilNadu"></option>
+            <option value="Andhra Pradesh"></option>
+            <option value="Kerala"></option>
+            <option value="Karnataka"></option>
+            <option value="Telangana"></option>
+            <option value="Others"></option>
+        </datalist><br><br>
+        <label>Month of Joining</label>
+        <input type="month"><br><br>
+        <label>Email Address</label>
+        <input type="email" placeholder="Your email id" required><br><br>
+        <label>Are you above 18?</label>
+        <input type="checkbox"><br><br>
+        <label>Upload Your 12th Marksheet</label> <br><br>
+        <input type="file" required><br><br>
+        <label for="">Aadhar Card (Front and Back)</label><br><br>
+        <input type="file"required multiple><br><br>
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+        <input type="submit"> <input type="reset">
+    </form>
+</body>
+</html>

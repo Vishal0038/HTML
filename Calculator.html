@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        #box{
+            width: 25%;
+            height: 250px;
+            border: 2px solid black;
+            display: grid;
+            grid-template-columns: auto auto;
+            margin-left: 35%;
+            margin-top: 5%;
+        }
+        button{
+            width: 60%;
+            height: 50px;
+            font-size: larger;
+            margin-right: 0;
+        }
+        .numbers{
+            width: 100%;
+            display: grid;
+            grid-template-columns: auto auto auto;
+            font-size: larger;
+          
+        }
+        .numbers div{
+            border: 1px solid gray;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <div class="numbers">
+            <div class="num" onclick="getValue(0)">1</div>
+            <div class="num" onclick="getValue(1)">2</div>
+            <div class="num" onclick="getValue(2)">3</div>
+            <div class="num" onclick="getValue(3)">4</div>
+            <div class="num" onclick="getValue(4)">5</div>
+            <div class="num" onclick="getValue(5)">6</div>
+            <div class="num" onclick="getValue(6)">7</div>
+            <div class="num" onclick="getValue(7)">8</div>
+            <div class="num" onclick="getValue(8)">9</div>      
+            <div class="num" onclick="getValue(9)">0</div>
+        </div>
+        <div class="operators">
+            <div id="sum" onclick="sum()"><button>+</button></div> 
+            <div id="difference" onclick="difference()"><button>-</button></div> 
+            <div id="product" onclick="product()"><button>*</button></div> 
+            <div id="division" onclick="division()"><button>/</button></div> 
+            <div id="modulo" onclick="modulo()"><button>%</button></div>
+        </div>
+    </div>
+    <script src="./../Vishalini Javascript/calculator.js"></script>
+</body>
+</html>
